@@ -1,7 +1,6 @@
 .form {
-    width: 40rem;
+    width: 50%;
     margin: 2rem auto;
-    
   }
   
   .form label {
@@ -39,4 +38,15 @@
   .form button:active {
     background-color: #ebc002;
     border-color: #ebc002;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .form {
+        width: 90%;
+        margin: 2rem auto;
+      }
   }

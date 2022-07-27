@@ -3,10 +3,16 @@ import classes from "./TodoItem.module.css";
 const TodosItem: React.FC<{
   text: string;
   id: string;
-  onRemoveTodo: () => void;
+  onRemoveTodo: (x: string) => void;
 }> = (props) => {
+  
+  const deleteTodo = () => {
+    props.onRemoveTodo(props.id)
+  }
+  
+
   return (
-    <li className={classes.item} key={props.id} onClick={props.onRemoveTodo}>
+    <li className={classes.item} key={props.id} onClick={deleteTodo}>
       {props.text}
     </li>
   );

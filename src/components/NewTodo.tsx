@@ -2,11 +2,6 @@ import { useRef } from "react";
 
 import classes from "./NewTodo.module.css";
 
-
-// interface Props {
-//     onAddTodo: (x:string) => void
-// }
-
 const NewTodo: React.FC<{onAddTodo:(x:string) => void }> = (props) => {
    const todoTextInputRef = useRef<HTMLInputElement>(null);
 
